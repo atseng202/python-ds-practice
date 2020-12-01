@@ -21,13 +21,16 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    # lowercase, then replace all spaces in string, and use slicing to reverse
     lower_phrase = phrase.lower()
-    remove_space = lower_phrase.split(" ")
-    no_space_phrase = "".join(remove_space)
-
-    no_space_phrase_reversed = "".join(reversed(list(no_space_phrase)))
+    no_space_phrase =lower_phrase.replace(" ", "")
+    no_space_phrase_reversed = no_space_phrase[::-1]
+    return no_space_phrase_reversed == no_space_phrase
     
-    return True if no_space_phrase_reversed == no_space_phrase else False
+    # remove_space = lower_phrase.split(" ")
+    # no_space_phrase = "".join(remove_space)
+    # no_space_phrase_reversed = "".join(reversed(list(no_space_phrase)))
+    
 
 
 
