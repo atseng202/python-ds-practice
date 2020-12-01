@@ -12,7 +12,7 @@ def flip_case(phrase, to_swap):
 
     """
     letters = list(phrase)
-    for idx in range(0, len(letters)):
+    for idx in range(len(letters)):
         letter = letters[idx]
         # check if letter needs to be swapped
         if letter.lower() == to_swap.lower():

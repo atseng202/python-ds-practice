@@ -17,9 +17,17 @@ def mode(nums):
     for number in nums:
         numbers_count[number] = numbers_count.get(number, 0) + 1
 
-    for k, v in numbers_count.items():
-        if v > val:
-            val = v
-            key = k
+    # Alternative solution
+    # Key function: how does the business logic work? 
+    def val_by_key(k):
+        return numbers_count[k]
+    
+    return max(nums, key=val_by_key)
 
-    return key
+    # Old solution
+    # for k, v in numbers_count.items():
+    #     if v > val:
+    #         val = v
+    #         key = k
+
+    # return key

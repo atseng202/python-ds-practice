@@ -3,7 +3,7 @@ def sum_pairs(nums, goal):
 
     For example:
 
-        >>> sum_pairs([1, 2, 2, 10], 2)
+        >>> sum_pairs([1, 2, 2, 10], 4)
         (2, 2)
 
     (4, 2) sum to 6, and come before (5, 1):
@@ -21,3 +21,4 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+
