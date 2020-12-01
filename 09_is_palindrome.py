@@ -23,7 +23,7 @@ def is_palindrome(phrase):
     """
     # lowercase, then replace all spaces in string, and use slicing to reverse
     lower_phrase = phrase.lower()
-    no_space_phrase =lower_phrase.replace(" ", "")
+    no_space_phrase = lower_phrase.replace(" ", "")
     no_space_phrase_reversed = no_space_phrase[::-1]
     return no_space_phrase_reversed == no_space_phrase
     

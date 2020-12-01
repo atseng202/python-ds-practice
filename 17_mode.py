@@ -11,3 +11,15 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    numbers_count = {}
+    val = 0
+    key = None
+    for number in nums:
+        numbers_count[number] = numbers_count.get(number, 0) + 1
+
+    for k, v in numbers_count.items():
+        if v > val:
+            val = v
+            key = k
+
+    return key
